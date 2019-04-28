@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{tjUo:function(e,n,t){"use strict";t.r(n);var o=t("LvDl"),c=t.n(o);document.body.appendChild(function(){let e=document.createElement("div"),n=document.createElement("button");return n.innerText="点我查看，console",e.innerHTML=c.a.join(["Hello","webpack"]," "),e.appendChild(n),e}())}},[["tjUo",1,2]]]);

@@ -14,16 +14,18 @@ module.exports = {
   devServer: {
     // contentBase: './dist',
     // publicPath:'/assets/'
-    hot:true
+    // hot:true
+  },
+  optimization: {
+    usedExports: true
   },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath:'/'
+    publicPath: '/'
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
@@ -38,6 +40,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '管理输出'
     }),
-    new webpack.HotModuleReplacementPlugin()
+    // new webpack.HotModuleReplacementPlugin()
   ]
 }
